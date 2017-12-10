@@ -1,0 +1,20 @@
+table {
+    td {
+        vertical-align: top;
+        text-align: left;
+
+        &:first-child {
+            padding: 0 10px;
+        }
+    }
+}
+
+.existing-urls {
+    margin-top: 10px;
+    .list-group-item {
+        .btn {
+            position: relative;
+            top: -7px;
+        }
+    }
+}

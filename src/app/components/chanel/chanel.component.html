@@ -1,0 +1,12 @@
+<div class="channel-container" *ngFor="let channel of items">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div *ngFor="let item of channel.item" class='item-container'>
+                <div *ngFor="let key of getKeys(item)">
+                  <h3>{{key}}</h3>
+                  <div [innerHTML]="item[key]"></div>
+                </div>
+              </div>
+        </div>
+    </div>  
+</div>
